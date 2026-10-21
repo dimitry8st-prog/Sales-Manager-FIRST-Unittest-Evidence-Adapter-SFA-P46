@@ -1,0 +1,38 @@
+[
+  {
+    "release_id": "release-1",
+    "suite_id": "unit",
+    "case_id": "error",
+    "attempt": 2,
+    "status": "ERROR",
+    "exit_code": 1,
+    "skip_count": 0
+  },
+  {
+    "release_id": "release-1",
+    "suite_id": "unit",
+    "case_id": "failure",
+    "attempt": 2,
+    "status": "FAIL",
+    "exit_code": 1,
+    "skip_count": 0
+  },
+  {
+    "release_id": "release-1",
+    "suite_id": "unit",
+    "case_id": "skip",
+    "attempt": 2,
+    "status": "SKIP",
+    "exit_code": 0,
+    "skip_count": 1
+  },
+  {
+    "release_id": "release-1",
+    "suite_id": "unit",
+    "case_id": "success",
+    "attempt": 2,
+    "status": "PASS",
+    "exit_code": 0,
+    "skip_count": 0
+  }
+]

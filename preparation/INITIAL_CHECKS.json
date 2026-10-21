@@ -1,0 +1,49 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "archive_files": 16,
+  "changed_original_files": [],
+  "protected_files": 14,
+  "protected_mismatches": [],
+  "frozen_abi_matches": true,
+  "commands": [
+    {
+      "label": "package",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "CHECK_PACKAGE.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST",
+      "exit_code": 0,
+      "expected_starter_exit": 0,
+      "stdout": "Проверка входов успешна: 14; реализация не принималась.\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "public_starter",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "RUN_PUBLIC_TESTS.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST",
+      "exit_code": 1,
+      "expected_starter_exit": 1,
+      "stdout": "",
+      "stderr_tail": "47/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py\", line 50, in test_unknown\n    self.invalid_execution(run_cases(result(['a']),case('unknown')))\n                                     ^^^^^^^^^^^^^\n  File \"/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py\", line 22, in result\n    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py\", line 9, in __init__\n    raise NotImplementedError(\"IMPLEMENTATION_REQUIRED\")\nNotImplementedError: IMPLEMENTATION_REQUIRED\n\n----------------------------------------------------------------------\nRan 16 tests in 0.004s\n\nFAILED (errors=23)\n"
+    },
+    {
+      "label": "candidate_starter",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "RUN_CANDIDATE_TESTS.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST",
+      "exit_code": 1,
+      "expected_starter_exit": 1,
+      "stdout": "Собственные тесты отсутствуют: tests/test_candidate_*.py\n",
+      "stderr_tail": ""
+    }
+  ]
+}

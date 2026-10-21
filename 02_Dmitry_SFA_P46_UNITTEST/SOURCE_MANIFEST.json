@@ -1,0 +1,20 @@
+{
+  "project_id": "sales-manager-first",
+  "task_id": "SFA-P46-UNITTEST-ADAPTER",
+  "revision": "R1",
+  "prepared_for": "Дмитрий",
+  "boundary": "ACTUAL_UNITTEST_CALLBACKS_TO_F127_RECORDS_ONLY",
+  "upstream_implementation_acceptance": "NOT_ACCEPTED_NOT_REQUIRED_FOR_DEVELOPMENT",
+  "runtime_connected": false,
+  "inputs": [
+    {
+      "path": "cp10/specs/SFA-P46-R1.json",
+      "sha256": "cb7cba89e9ccd9767fd6b9506f8570cc9ca1722ffad1a4b22a293769781e4129"
+    },
+    {
+      "path": "cp03/sources/contracts/F1-27_R1_TASK_ORDER/F1-27_R1/CONTRACT.md",
+      "sha256": "3d0679d91d36c88c8c143f12e67cf07441299b571440aa21e156cfdba06e654b"
+    }
+  ],
+  "frozen_abi_sha256": "9febcf273cee656b145aa0b209684807c46f2ecb5032e5310a01c3da93193d47"
+}

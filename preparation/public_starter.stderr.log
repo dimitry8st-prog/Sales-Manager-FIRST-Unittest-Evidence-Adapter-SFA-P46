@@ -1,0 +1,318 @@
+test_active_snapshot_latches (test_public.PublicTests.test_active_snapshot_latches) ... ERROR
+test_actual_success (test_public.PublicTests.test_actual_success) ... ERROR
+test_all_actual_outcomes (test_public.PublicTests.test_all_actual_outcomes) ... ERROR
+test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) ... 
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': True, 'bindings': []}) ... ERROR
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'bad id', 'bindings': []}) ... ERROR
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': ()}) ... ERROR
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [], 'attempt': True}) ... ERROR
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [], 'attempt': 0}) ... ERROR
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [{'test_id': 'fake.a', 'suite_id': 'unit', 'case_id': 'a'}, {'test_id': 'fake.a', 'suite_id': 'unit', 'case_id': 'a'}]}) ... ERROR
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [{'test_id': 'fake.a', 'suite_id': 'unit', 'case_id': 'a', 'extra': 1}]}) ... ERROR
+  test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [{'test_id': 'x y', 'suite_id': 'a', 'case_id': 'b'}]}) ... ERROR
+test_duplicate_terminal_and_bad_order (test_public.PublicTests.test_duplicate_terminal_and_bad_order) ... ERROR
+test_empty (test_public.PublicTests.test_empty) ... ERROR
+test_exact_types (test_public.PublicTests.test_exact_types) ... ERROR
+test_expected_and_unexpected_are_unsupported (test_public.PublicTests.test_expected_and_unexpected_are_unsupported) ... ERROR
+test_failfast_omits_notrun (test_public.PublicTests.test_failfast_omits_notrun) ... ERROR
+test_missing_start_or_terminal (test_public.PublicTests.test_missing_start_or_terminal) ... ERROR
+test_mutation_and_snapshot_independence (test_public.PublicTests.test_mutation_and_snapshot_independence) ... ERROR
+test_repeated_execution (test_public.PublicTests.test_repeated_execution) ... ERROR
+test_sequential_snapshots_and_attempts (test_public.PublicTests.test_sequential_snapshots_and_attempts) ... ERROR
+test_setup_class_error_is_not_case_pass (test_public.PublicTests.test_setup_class_error_is_not_case_pass) ... ERROR
+test_subtest_success_is_unsupported (test_public.PublicTests.test_subtest_success_is_unsupported) ... ERROR
+test_unknown (test_public.PublicTests.test_unknown) ... ERROR
+
+======================================================================
+ERROR: test_active_snapshot_latches (test_public.PublicTests.test_active_snapshot_latches)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 57, in test_active_snapshot_latches
+    r=result(['a']);c=case('a');r.startTest(c);self.invalid_execution(r);r.addSuccess(c);r.stopTest(c);self.invalid_execution(r)
+      ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_actual_success (test_public.PublicTests.test_actual_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 31, in test_actual_success
+    r=run_cases(result(['a']),case('a'))
+                ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_all_actual_outcomes (test_public.PublicTests.test_all_actual_outcomes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 34, in test_all_actual_outcomes
+    r=result(['success','failure','error','skip'],2)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': True, 'bindings': []})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'bad id', 'bindings': []})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': ()})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [], 'attempt': True})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [], 'attempt': 0})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [{'test_id': 'fake.a', 'suite_id': 'unit', 'case_id': 'a'}, {'test_id': 'fake.a', 'suite_id': 'unit', 'case_id': 'a'}]})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [{'test_id': 'fake.a', 'suite_id': 'unit', 'case_id': 'a', 'extra': 1}]})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) (kw={'release_id': 'ok', 'bindings': [{'test_id': 'x y', 'suite_id': 'a', 'case_id': 'b'}]})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 42, in test_configuration_invalid
+    with self.assertRaises(sut.RecordingError) as c:sut.RecordingResult(**kw)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_duplicate_terminal_and_bad_order (test_public.PublicTests.test_duplicate_terminal_and_bad_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 79, in test_duplicate_terminal_and_bad_order
+    r=result(['a']);c=case('a');r.startTest(c);r.addSuccess(c);r.addSuccess(c);r.stopTest(c);self.invalid_execution(r)
+      ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_empty (test_public.PublicTests.test_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 29, in test_empty
+    r=result([]);self.assertIsInstance(r,unittest.TestResult);self.assertEqual(r.records(),[])
+      ^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_exact_types (test_public.PublicTests.test_exact_types)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 46, in test_exact_types
+    with self.assertRaises(sut.RecordingError):sut.RecordingResult(release_id='r',bindings=L())
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_expected_and_unexpected_are_unsupported (test_public.PublicTests.test_expected_and_unexpected_are_unsupported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 62, in test_expected_and_unexpected_are_unsupported
+    self.invalid_execution(run_cases(result(['a']),case('a',outcome)))
+                                     ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_failfast_omits_notrun (test_public.PublicTests.test_failfast_omits_notrun)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 64, in test_failfast_omits_notrun
+    r=result(['a','b']);r.failfast=True;run_cases(r,case('a','fail'),case('b'))
+      ^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_missing_start_or_terminal (test_public.PublicTests.test_missing_start_or_terminal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 54, in test_missing_start_or_terminal
+    r=result(['a']);r.addSuccess(case('a'));self.invalid_execution(r)
+      ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_mutation_and_snapshot_independence (test_public.PublicTests.test_mutation_and_snapshot_independence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 67, in test_mutation_and_snapshot_independence
+    b=[binding('b'),binding('a')];before=copy.deepcopy(b);r=sut.RecordingResult(release_id='r',bindings=b)
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_repeated_execution (test_public.PublicTests.test_repeated_execution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 52, in test_repeated_execution
+    r=result(['a']);run_cases(r,case('a'),case('a'));self.invalid_execution(r)
+      ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_sequential_snapshots_and_attempts (test_public.PublicTests.test_sequential_snapshots_and_attempts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 71, in test_sequential_snapshots_and_attempts
+    r=result(['a','b'],7);run_cases(r,case('a'));first=r.records();run_cases(r,case('b'));self.assertEqual(len(first),1);self.assertEqual(len(r.records()),2);self.assertTrue(all(x['attempt']==7 for x in r.records()))
+      ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_setup_class_error_is_not_case_pass (test_public.PublicTests.test_setup_class_error_is_not_case_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 77, in test_setup_class_error_is_not_case_pass
+    c=Broken('test_a');r=sut.RecordingResult(release_id='r',bindings=[{'test_id':c.id(),'suite_id':'s','case_id':'c'}]);run_cases(r,c);self.invalid_execution(r)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_subtest_success_is_unsupported (test_public.PublicTests.test_subtest_success_is_unsupported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 59, in test_subtest_success_is_unsupported
+    self.invalid_execution(run_cases(result(['a']),case('a','sub')))
+                                     ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+======================================================================
+ERROR: test_unknown (test_public.PublicTests.test_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 50, in test_unknown
+    self.invalid_execution(run_cases(result(['a']),case('unknown')))
+                                     ^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/public/test_public.py", line 22, in result
+    return sut.RecordingResult(release_id='release-1',bindings=[binding(n) for n in names],attempt=attempt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/8febe5931947/p46-plan/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py", line 9, in __init__
+    raise NotImplementedError("IMPLEMENTATION_REQUIRED")
+NotImplementedError: IMPLEMENTATION_REQUIRED
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.004s
+
+FAILED (errors=23)
