@@ -1,0 +1,128 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "id": "import_origins",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import sys,json,pathlib,unittest;root=pathlib.Path.cwd();sys.path.insert(0,str(root/\"source\"));import audit_release.unittest_evidence as m;print(json.dumps({\"audit_release.unittest_evidence\":m.__file__,\"unittest\":unittest.__file__}))"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "raw_logs/import_origins.stdout.log",
+        "sha256": "fb988fd04444635ad2f8871c341ad671a91197f8908ef923570c83241b390dea",
+        "bytes": 269
+      },
+      "stderr": {
+        "file": "raw_logs/import_origins.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "tests_run": null,
+      "status": "PASS",
+      "skips": 0,
+      "expected_failures": 0,
+      "import_origins": {
+        "audit_release.unittest_evidence": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py",
+        "unittest": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/__init__.py"
+      }
+    },
+    {
+      "id": "package",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "CHECK_PACKAGE.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "raw_logs/package.stdout.log",
+        "sha256": "84c931987b6edada19f1e975d23f5f60db869807adf032f86104b1b51a9b41ba",
+        "bytes": 100
+      },
+      "stderr": {
+        "file": "raw_logs/package.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "tests_run": null,
+      "status": "PASS",
+      "skips": 0,
+      "expected_failures": 0,
+      "import_origins": {
+        "audit_release.unittest_evidence": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py",
+        "unittest": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/__init__.py"
+      }
+    },
+    {
+      "id": "public",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "RUN_PUBLIC_TESTS.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "raw_logs/public.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stderr": {
+        "file": "raw_logs/public.stderr.log",
+        "sha256": "df6c279a9c1ff2f70b4ae0584767eccaf5b13e6184db2ac128b7569421e09324",
+        "bytes": 1551
+      },
+      "tests_run": 16,
+      "status": "PASS",
+      "skips": 0,
+      "expected_failures": 0,
+      "import_origins": {
+        "audit_release.unittest_evidence": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py",
+        "unittest": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/__init__.py"
+      }
+    },
+    {
+      "id": "candidate",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "RUN_CANDIDATE_TESTS.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "raw_logs/candidate.stdout.log",
+        "sha256": "b837f7b69fbca6d2a175225b5b2bdc8150de5ccfb9eb37128af8fa96cfed6752",
+        "bytes": 101
+      },
+      "stderr": {
+        "file": "raw_logs/candidate.stderr.log",
+        "sha256": "c524d318fd7922216968956385cbb5d052688d22565640e3ecf402f283b763d6",
+        "bytes": 8304
+      },
+      "tests_run": 49,
+      "status": "PASS",
+      "skips": 0,
+      "expected_failures": 0,
+      "import_origins": {
+        "audit_release.unittest_evidence": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py",
+        "unittest": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/__init__.py"
+      }
+    }
+  ],
+  "import_origins": {
+    "audit_release.unittest_evidence": "/workspace/scratch/8febe5931947/p46-github/repo/02_Dmitry_SFA_P46_UNITTEST/source/audit_release/unittest_evidence.py",
+    "unittest": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/__init__.py"
+  },
+  "counting_note": "Outer test methods are counted. Nested intentional failures/errors/skips are test data, not failures/skips of these outer gates."
+}

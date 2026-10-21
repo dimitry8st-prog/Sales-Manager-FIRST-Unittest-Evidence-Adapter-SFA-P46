@@ -1,0 +1,660 @@
+{
+  "public": [
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_empty",
+      "line": 28,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_actual_success",
+      "line": 30,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_all_actual_outcomes",
+      "line": 33,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_configuration_invalid",
+      "line": 38,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_exact_types",
+      "line": 44,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_unknown",
+      "line": 49,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_repeated_execution",
+      "line": 51,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_missing_start_or_terminal",
+      "line": 53,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_active_snapshot_latches",
+      "line": 56,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_subtest_success_is_unsupported",
+      "line": 58,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_expected_and_unexpected_are_unsupported",
+      "line": 60,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_failfast_omits_notrun",
+      "line": 63,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_mutation_and_snapshot_independence",
+      "line": 66,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_sequential_snapshots_and_attempts",
+      "line": 70,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_setup_class_error_is_not_case_pass",
+      "line": 72,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    },
+    {
+      "file": "public/test_public.py",
+      "class": "PublicTests",
+      "method": "test_duplicate_terminal_and_bad_order",
+      "line": 78,
+      "status": "PASS",
+      "gate": "public",
+      "stdout": "raw_logs/public.stdout.log",
+      "stderr": "raw_logs/public.stderr.log"
+    }
+  ],
+  "candidate": [
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_public_abi_and_inheritance",
+      "line": 116,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_release_suite_case_identifier_boundaries",
+      "line": 127,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_attempt_is_exact_positive_int_without_invented_cap",
+      "line": 146,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_bindings_container_element_and_key_shapes",
+      "line": 155,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_exact_builtin_subclasses_rejected_for_every_config_position",
+      "line": 166,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_invalid_objects_do_not_escape_configuration_error",
+      "line": 190,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_test_id_length_unicode_and_exact_comparison",
+      "line": 204,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_test_id_rejects_all_c0_del_whitespace_and_surrogates",
+      "line": 217,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_bindings_zero_and_ten_thousand_boundary",
+      "line": 223,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_duplicate_test_ids_and_suite_case_pairs_rejected",
+      "line": 230,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_configuration_is_snapshotted_without_mutable_aliases",
+      "line": 241,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_constructor_and_records_never_run_or_load_tests",
+      "line": 251,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_actual_mixed_outcomes_exact_rows_and_standard_fields",
+      "line": 263,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_success_and_skip_keep_standard_was_successful_semantics",
+      "line": 281,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_parent_methods_are_called_for_supported_callbacks",
+      "line": 287,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_failfast_failure_and_error_leave_remaining_bindings_absent",
+      "line": 308,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_explicit_stop_before_run_produces_no_records",
+      "line": 318,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_explicit_stop_during_test_keeps_only_completed_case",
+      "line": 326,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_start_and_stop_test_run_are_optional_and_do_not_reset",
+      "line": 340,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_same_identifier_can_use_different_test_instances_across_cycle",
+      "line": 352,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_no_events_and_unexecuted_bindings_do_not_become_pass",
+      "line": 359,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_records_are_plain_exact_seven_field_containers",
+      "line": 365,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_snapshot_sorting_is_python_suite_then_case_order",
+      "line": 376,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_snapshots_are_nonsealing_and_independent",
+      "line": 382,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_attempts_and_instances_are_independent",
+      "line": 394,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_unknown_identifier_cannot_return_partial_prior_success",
+      "line": 402,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_unknown_identifier_in_each_callback_latches",
+      "line": 408,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_repeated_started_identifier_is_invalid_even_after_complete",
+      "line": 419,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_terminal_without_start_never_raises_recordingerror_in_callback",
+      "line": 425,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_stop_without_start_and_stop_without_outcome_are_invalid",
+      "line": 436,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_duplicate_terminal_callbacks_latch_permanently",
+      "line": 445,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_next_start_before_prior_stop_is_invalid",
+      "line": 460,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_terminal_or_stop_for_different_active_identifier_is_invalid",
+      "line": 470,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_terminal_after_stop_and_second_stop_are_invalid",
+      "line": 477,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_snapshot_of_active_test_invalidates_even_after_valid_completion",
+      "line": 483,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_invalid_execution_stays_invalid_after_other_valid_test",
+      "line": 496,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_nonstring_and_unbound_id_return_values_invalidate",
+      "line": 502,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_ordinary_id_exceptions_latch_without_interrupting_cleanup",
+      "line": 518,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_fatal_id_exceptions_propagate_from_each_identity_callback",
+      "line": 534,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_subtest_success_failure_and_error_are_all_unsupported",
+      "line": 551,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_expected_failure_and_unexpected_success_preserve_parent_diagnostics",
+      "line": 561,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_direct_unsupported_callbacks_always_latch",
+      "line": 571,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_class_setup_error_is_not_a_case_record",
+      "line": 583,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_class_teardown_error_invalidates_already_completed_case",
+      "line": 599,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_cleanup_runs_after_unsupported_result",
+      "line": 615,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_records_does_not_format_test_or_exception",
+      "line": 621,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_parent_implementation_errors_are_not_suppressed",
+      "line": 653,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_invalid_err_is_left_to_standard_unittest",
+      "line": 663,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    },
+    {
+      "file": "tests/test_candidate_recording.py",
+      "class": "RecordingContractTests",
+      "method": "test_import_and_success_callbacks_without_adapter_side_effects",
+      "line": 670,
+      "status": "PASS",
+      "gate": "candidate",
+      "stdout": "raw_logs/candidate.stdout.log",
+      "stderr": "raw_logs/candidate.stderr.log"
+    }
+  ],
+  "counts": {
+    "public": 16,
+    "candidate": 49
+  }
+}

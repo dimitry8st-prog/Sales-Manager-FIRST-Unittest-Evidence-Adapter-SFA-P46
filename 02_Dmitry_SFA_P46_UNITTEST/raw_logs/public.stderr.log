@@ -1,0 +1,21 @@
+test_active_snapshot_latches (test_public.PublicTests.test_active_snapshot_latches) ... ok
+test_actual_success (test_public.PublicTests.test_actual_success) ... ok
+test_all_actual_outcomes (test_public.PublicTests.test_all_actual_outcomes) ... ok
+test_configuration_invalid (test_public.PublicTests.test_configuration_invalid) ... ok
+test_duplicate_terminal_and_bad_order (test_public.PublicTests.test_duplicate_terminal_and_bad_order) ... ok
+test_empty (test_public.PublicTests.test_empty) ... ok
+test_exact_types (test_public.PublicTests.test_exact_types) ... ok
+test_expected_and_unexpected_are_unsupported (test_public.PublicTests.test_expected_and_unexpected_are_unsupported) ... ok
+test_failfast_omits_notrun (test_public.PublicTests.test_failfast_omits_notrun) ... ok
+test_missing_start_or_terminal (test_public.PublicTests.test_missing_start_or_terminal) ... ok
+test_mutation_and_snapshot_independence (test_public.PublicTests.test_mutation_and_snapshot_independence) ... ok
+test_repeated_execution (test_public.PublicTests.test_repeated_execution) ... ok
+test_sequential_snapshots_and_attempts (test_public.PublicTests.test_sequential_snapshots_and_attempts) ... ok
+test_setup_class_error_is_not_case_pass (test_public.PublicTests.test_setup_class_error_is_not_case_pass) ... ok
+test_subtest_success_is_unsupported (test_public.PublicTests.test_subtest_success_is_unsupported) ... ok
+test_unknown (test_public.PublicTests.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.004s
+
+OK

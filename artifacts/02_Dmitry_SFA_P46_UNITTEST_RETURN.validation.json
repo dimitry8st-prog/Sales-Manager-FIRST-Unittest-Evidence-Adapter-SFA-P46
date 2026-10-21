@@ -1,0 +1,345 @@
+{
+  "verification": "SECOND_INDEPENDENT_FINAL_ZIP_GATE",
+  "zip_file": "artifacts/02_Dmitry_SFA_P46_UNITTEST_RETURN.zip",
+  "zip_sha256": "0facd34b51013a56532cd03ba3593aa7227bb8a7a5f001229bbef5aae5481ee3",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "id": "package",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "CHECK_PACKAGE.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/final-clean-check/02_Dmitry_SFA_P46_UNITTEST_RETURN",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "artifacts/verification/round2/package.stdout.log",
+        "sha256": "84c931987b6edada19f1e975d23f5f60db869807adf032f86104b1b51a9b41ba",
+        "bytes": 100
+      },
+      "stderr": {
+        "file": "artifacts/verification/round2/package.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "tests_run": null
+    },
+    {
+      "id": "public",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "RUN_PUBLIC_TESTS.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/final-clean-check/02_Dmitry_SFA_P46_UNITTEST_RETURN",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "artifacts/verification/round2/public.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stderr": {
+        "file": "artifacts/verification/round2/public.stderr.log",
+        "sha256": "df6c279a9c1ff2f70b4ae0584767eccaf5b13e6184db2ac128b7569421e09324",
+        "bytes": 1551
+      },
+      "tests_run": 16
+    },
+    {
+      "id": "candidate",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "RUN_CANDIDATE_TESTS.py"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/final-clean-check/02_Dmitry_SFA_P46_UNITTEST_RETURN",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "artifacts/verification/round2/candidate.stdout.log",
+        "sha256": "b837f7b69fbca6d2a175225b5b2bdc8150de5ccfb9eb37128af8fa96cfed6752",
+        "bytes": 101
+      },
+      "stderr": {
+        "file": "artifacts/verification/round2/candidate.stderr.log",
+        "sha256": "9fdb46c53de5aa53d5443a5089f413217571f40362137328578cc293c5d73e73",
+        "bytes": 8304
+      },
+      "tests_run": 49
+    },
+    {
+      "id": "import_origins",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import sys,json,pathlib,unittest;root=pathlib.Path.cwd();sys.path.insert(0,str(root/\"source\"));import audit_release.unittest_evidence as m;print(json.dumps({\"audit_release.unittest_evidence\":m.__file__,\"unittest\":unittest.__file__}))"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/final-clean-check/02_Dmitry_SFA_P46_UNITTEST_RETURN",
+      "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "exit_code": 0,
+      "stdout": {
+        "file": "artifacts/verification/round2/import_origins.stdout.log",
+        "sha256": "3fd285073eb9f2215db3e430790ad3dfd6894a05f0cb860c138b785cf33e0bcb",
+        "bytes": 289
+      },
+      "stderr": {
+        "file": "artifacts/verification/round2/import_origins.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "tests_run": null
+    },
+    {
+      "id": "patch_check",
+      "argv": [
+        "git",
+        "apply",
+        "--check",
+        "-"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/final-clean-check/patch-replay",
+      "interpreter": null,
+      "exit_code": 0,
+      "stdout": {
+        "file": "artifacts/verification/round2/patch_check.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stderr": {
+        "file": "artifacts/verification/round2/patch_check.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stdin_sha256": "f8d264a597f69de3807c180926a423080557a79b89d8cd88df2ebddac05d62a5",
+      "tests_run": null
+    },
+    {
+      "id": "patch_apply",
+      "argv": [
+        "git",
+        "apply",
+        "-"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/final-clean-check/patch-replay",
+      "interpreter": null,
+      "exit_code": 0,
+      "stdout": {
+        "file": "artifacts/verification/round2/patch_apply.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stderr": {
+        "file": "artifacts/verification/round2/patch_apply.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stdin_sha256": "f8d264a597f69de3807c180926a423080557a79b89d8cd88df2ebddac05d62a5",
+      "tests_run": null
+    }
+  ],
+  "checks": {
+    "python_3_12": {
+      "status": "PASS"
+    },
+    "expected_frozen_zip_hash": {
+      "status": "PASS"
+    },
+    "fresh_clean_destination": {
+      "status": "PASS"
+    },
+    "no_duplicate_entries": {
+      "status": "PASS"
+    },
+    "crc": {
+      "status": "PASS"
+    },
+    "single_exact_root": {
+      "status": "PASS"
+    },
+    "manifest_exact_members": {
+      "status": "PASS"
+    },
+    "manifest_hashes": {
+      "status": "PASS",
+      "detail": []
+    },
+    "original_crc": {
+      "status": "PASS"
+    },
+    "all_original_members_retained": {
+      "status": "PASS"
+    },
+    "protected_manifest_original": {
+      "status": "PASS"
+    },
+    "protected_original_hashes": {
+      "status": "PASS",
+      "detail": []
+    },
+    "only_allowed_original_change": {
+      "status": "PASS",
+      "detail": [
+        "source/audit_release/unittest_evidence.py"
+      ]
+    },
+    "only_allowed_additions": {
+      "status": "PASS",
+      "detail": [
+        "IMPLEMENTATION_RU.md",
+        "OUTPUT_SHA256.json",
+        "PATCH.diff",
+        "RETURN_REPORT_RU.md",
+        "raw_logs/COMMANDS.json",
+        "raw_logs/PATCH_VERIFICATION.json",
+        "raw_logs/RESULT.json",
+        "raw_logs/SOURCE_INTEGRITY.json",
+        "raw_logs/TEST_INVENTORY.json",
+        "raw_logs/TRACEABILITY.json",
+        "raw_logs/candidate.stderr.log",
+        "raw_logs/candidate.stdout.log",
+        "raw_logs/import_origins.stderr.log",
+        "raw_logs/import_origins.stdout.log",
+        "raw_logs/package.stderr.log",
+        "raw_logs/package.stdout.log",
+        "raw_logs/public.stderr.log",
+        "raw_logs/public.stdout.log",
+        "tests/test_candidate_recording.py"
+      ]
+    },
+    "zip_matches_live_package": {
+      "status": "PASS"
+    },
+    "live_package_no_extra_members": {
+      "status": "PASS"
+    },
+    "all_49_own_cases_traced": {
+      "status": "PASS"
+    },
+    "inventory_public": {
+      "status": "PASS"
+    },
+    "inventory_candidate": {
+      "status": "PASS"
+    },
+    "result_accuracy": {
+      "status": "PASS"
+    },
+    "package_exit": {
+      "status": "PASS",
+      "detail": 0
+    },
+    "public_exit": {
+      "status": "PASS",
+      "detail": 0
+    },
+    "public_actual_count": {
+      "status": "PASS",
+      "detail": 16
+    },
+    "public_no_skips_or_expected_failures": {
+      "status": "PASS"
+    },
+    "candidate_exit": {
+      "status": "PASS",
+      "detail": 0
+    },
+    "candidate_actual_count": {
+      "status": "PASS",
+      "detail": 49
+    },
+    "candidate_no_skips_or_expected_failures": {
+      "status": "PASS"
+    },
+    "import_origins_exit": {
+      "status": "PASS",
+      "detail": 0
+    },
+    "implementation_origin_clean_root": {
+      "status": "PASS"
+    },
+    "patch_check_exit": {
+      "status": "PASS",
+      "detail": 0
+    },
+    "patch_apply_exit": {
+      "status": "PASS",
+      "detail": 0
+    },
+    "patch_reconstructs_product_and_own_tests": {
+      "status": "PASS"
+    },
+    "patch_preserves_all_other_originals": {
+      "status": "PASS"
+    },
+    "patch_no_unexpected_files": {
+      "status": "PASS"
+    },
+    "clean_extracted_files_unchanged": {
+      "status": "PASS"
+    },
+    "zip_unchanged_after_gates": {
+      "status": "PASS"
+    },
+    "all_archive_entries_safe": {
+      "status": "PASS",
+      "files": 35
+    },
+    "trace_symbols_and_case_names_lines": {
+      "status": "PASS",
+      "requirements": 6,
+      "own_test_methods": 49
+    },
+    "archived_command_log_hashes": {
+      "status": "PASS",
+      "commands": 4,
+      "streams": 8
+    },
+    "inventory_matches_actual_source_methods": {
+      "status": "PASS",
+      "public": 16,
+      "candidate": 49
+    }
+  },
+  "zip_bytes": 59888,
+  "zip_files": 35,
+  "manifest_files": 34,
+  "protected_files": 14,
+  "trace_requirements": 6,
+  "import_origins": {
+    "audit_release.unittest_evidence": "/workspace/scratch/8febe5931947/p46-github/final-clean-check/02_Dmitry_SFA_P46_UNITTEST_RETURN/source/audit_release/unittest_evidence.py",
+    "unittest": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/__init__.py"
+  },
+  "counts": {
+    "public": 16,
+    "candidate": 49,
+    "outer_test_methods": 65,
+    "skips": 0,
+    "expected_failures": 0
+  },
+  "patch_scope": [
+    "source/audit_release/unittest_evidence.py",
+    "tests/test_candidate_recording.py"
+  ],
+  "integration_status": "NOT_CONNECTED",
+  "customer_acceptance": "PENDING",
+  "limitations": [
+    "Inner intentional test failures/errors/skips are checked test data, not outer gate failures.",
+    "No accepted F1-27 implementation or connected runtime is claimed.",
+    "Standard unittest diagnostics may read local source lines via linecache; adapter is not a sandbox.",
+    "This external protocol validates the exact frozen ZIP and is not inserted into it."
+  ],
+  "status": "PASS",
+  "check_summary": {
+    "assertions_performed": 242,
+    "all_passed": true,
+    "detail_policy": "Per-entry/line assertions are aggregated here; actual commands and raw logs are retained."
+  },
+  "original_archive_sha256": "b1b454c5b2ed49d45cc8e84a66b914953455b278c46b4cc53392965e49d6bfcb",
+  "original_files": 16
+}

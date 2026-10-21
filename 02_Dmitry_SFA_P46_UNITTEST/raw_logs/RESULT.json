@@ -1,0 +1,24 @@
+{
+  "task": "SFA-P46-UNITTEST-ADAPTER R1",
+  "component_status": "COMPONENT_IMPLEMENTED",
+  "component_checks": "PASS",
+  "gates": {
+    "package": "PASS",
+    "public": "PASS",
+    "candidate": "PASS"
+  },
+  "public_tests": 16,
+  "candidate_tests": 49,
+  "outer_test_methods": 65,
+  "skips": 0,
+  "expected_failures": 0,
+  "protected_files": 14,
+  "patch_replay": "PASS",
+  "integration_status": "NOT_CONNECTED",
+  "F127_implementation": "NOT_ACCEPTED_NOT_REQUIRED_FOR_DEVELOPMENT",
+  "installed_runtime": "NOT_RUN",
+  "postgresql": "NOT_RUN",
+  "production_release": "NOT_RUN",
+  "customer_acceptance": "PENDING",
+  "final_zip_second_check": "External verification after freezing ZIP; see adjacent validation bound to ZIP SHA-256."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": [
+    "source/audit_release/unittest_evidence.py",
+    "tests/test_candidate_recording.py"
+  ],
+  "sha256": "f8d264a597f69de3807c180926a423080557a79b89d8cd88df2ebddac05d62a5",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "apply",
+        "--check",
+        "-"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/p46-patch-check-o2fb6wan",
+      "exit_code": 0,
+      "stdin_sha256": "f8d264a597f69de3807c180926a423080557a79b89d8cd88df2ebddac05d62a5",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "-"
+      ],
+      "cwd": "/workspace/scratch/8febe5931947/p46-github/p46-patch-check-o2fb6wan",
+      "exit_code": 0,
+      "stdin_sha256": "f8d264a597f69de3807c180926a423080557a79b89d8cd88df2ebddac05d62a5",
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "note": "PATCH.diff reconstructs the permitted product change and own test files. Documentation/logs/hash manifest are full files in this return and are outside patch scope."
+}
